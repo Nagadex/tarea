@@ -33,9 +33,68 @@
             </div> 
         </div>
 
-        <div>
+        <div id="contenido">
             <div>
-                <span>Contenido</span>
+                <h2>Contenido</h2>
+
+                <p>Pasos para subir mis cambios al repositorio de github</p>
+                <cite>
+                    Desde el terminal (GitBash de Windows o la terminal integrada de vsCode) y estando en la carpeta del repositorio (ejemplo: en "~/clases/tarea") haremos estos 6 pasos:
+                </cite>
+                <ol>
+                    <li>Si queremos ver qué archivos tienen modificaciones pendientes por subir, escribimos
+                        <pre>
+                            <code>
+git status
+                            </code> 
+                        </pre>
+                    </li>
+
+                    <li> Agregamos todos nuestros cambios más recientes al "stage":
+                        <pre>
+                            <code>
+git add  .
+                            </code>
+                        </pre>
+                    </li>
+
+                    <li>Si volvemos a pedir el status, veremos que ahora los archivos cambiados están en verde (lo que simboliza que ya están en el "stage".. es decir.. ya listos para ser "empaquetados" en la "cajita" del commit para que se vayan al repositorio
+                        <pre>
+                            <code>
+git status
+                            </code>
+                        </pre>
+                    </li>
+
+                    <li>Generamos un "commit" con los cambios que agregamos al "stage" 
+                        (y le agregamos de una vez un "mensaje" a ese commit, con el parámetro -m)
+                        <pre>
+                            <code>
+git commit -m "aprendiendo el uso de los ids"
+                            </code>
+                        </pre>
+                    </li>
+
+                    <li>Ahora subimos ese commit (que por ahora sólo lo tenemos local en la máquina) al repositorio remoto en internet
+                        <pre>
+                            <code>
+git push origin main
+                            </code>
+                        </pre>
+                    </li>
+                    <cite>
+                        origin hace referencia a que se trata de la ubicación que tenemos configurada como el "origen" (que apunta al repositorio de github)
+main se refiere a la rama ("branch") donde estás parado actualmente (lo que te sale dentro del paréntesis arriba en la carpeta)
+                    </cite><br/><br/>
+                    
+                    <li>Si todo sale como esperamos, deberías poder ver ya tus cambios en la página de github, pero además lo puedes confirmar localmente si tiras de nuevo un status, para darte cuenta de que ahora ya no tienes cambios pendientes (ni en rojo ni en verde)
+                        <pre>
+                            <code>
+git status
+                            </code>
+                        </pre>
+                    </li>
+                </ol>
             </div>
                
             <div>
@@ -44,7 +103,7 @@
         </div>
 
         <div id="pie-de-pagina">
-           <span>Pie de Pagina</span> 
+           <span>Hecho por: Ronald Vásquez</span> 
         </div>
     </body>
 </html>
