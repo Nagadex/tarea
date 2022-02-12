@@ -10,12 +10,25 @@
             text-align: center;
         }
 
-        #pie-de-pagina {
-            background-color: gray;
-        }
-
         body {
             background-color: white;
+        }
+
+        #rotulo {
+            height: 300px;
+            position: relative;
+            background:url(https://maxsalvatorius.files.wordpress.com/2022/02/herramientas-de-soporte-tecnico.jpg)
+        }
+
+        #rotulo>div {
+            height: 95%;
+            width: 99%;
+            position: absolute;
+            margin: 0;
+        }
+
+        #pie-de-pagina {
+            background-color: gray;
         }
 
         #encabezado {
@@ -49,7 +62,8 @@
 
         #menu ul {
             text-align: left;
-            padding: 10px;
+            padding: 0px 10px;
+            margin: 0;
         }
 
         #contenido {
@@ -79,8 +93,10 @@
 
 <body>
     <div id="encabezado">
-        <div>
-            <h1>Bienvenidos a Nuestra Pagina Web</h1>
+        <div id="rotulo">
+            <div>
+                <h1>Bienvenidos a Nuestra Pagina Web</h1>
+            </div>
         </div>
 
         <div id="menu">
