@@ -1,0 +1,52 @@
+       body {
+           background-color: rgb(254, 255, 255);
+       }
+       
+       header {
+           background-color: rgb(9, 9, 155);
+           padding: 100px;
+       }
+       
+       nav,
+       main header,
+       article,
+       main>aside,
+       article header,
+       article footer div {
+           border: 1px solid black;
+       }
+       
+       nav li {
+           display: inline-block
+       }
+       
+       main header {
+           background-color: unset;
+           padding: 5px;
+       }
+       
+       figure img {
+           width: 350px;
+       }
+       
+       main>aside {
+           width: 200px;
+       }
+       
+       main {
+           overflow: hidden;
+           max-width: 1000px;
+           margin: auto;
+       }
+       
+       #news {
+           width: calc(100% - 210px);
+       }
+       
+       .left {
+           display: inline-block;
+       }
+       
+       .right {
+           float: right;
+       }
